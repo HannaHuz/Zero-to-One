@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Queens Condensed;
+  src: url('../fonts/queenscondensed/QueensCondensed-Medium.eot');
+  src: local('Queens Condensed'),
+       url('../fonts/queenscondensed/QueensCondensed-Medium.woff') format('woff'),
+       url('../fonts/queenscondensed/QueensCondensed-Medium.ttf') format('truetype'),
+       url('../fonts/queenscondensed/QueensCondensed-Medium.svg') format('svg');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: ABC Favorit Extended;
+  src: url('../fonts/abcfavoritextended/ABCFavoritExtended-Book.eot');
+  src: local('ABC Favorit Extended'),
+       url('../fonts/abcfavoritextended/ABCFavoritExtended-Book.woff') format('woff'),
+       url('../fonts/abcfavoritextended/ABCFavoritExtended-Book.ttf') format('truetype'),
+       url('../fonts/abcfavoritextended/ABCFavoritExtended-Book.svg') format('svg');
+  font-weight: 350;
+}
+
+html,body,#app {
+  font-family: ABC Favorit Extended;
+  font-weight: 350;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');

@@ -1,0 +1,108 @@
+html, body, #app {
+  background: #DDD9D2;
+  //background: #e3ded9;
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+@for $i from 1 through 2000 {
+  $time: $i / 100;
+  .del-#{$i} {
+    animation-delay: #{$time}s !important;
+  }
+}
+
+main{
+  position: relative;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  @media(min-width:576px){
+    width: 576px;
+  }
+  @media(min-width:768px){
+    width: 768px;
+  }
+  @media(min-width:992px){
+    width: 992px;
+    padding-left: 200px;
+    padding-right: 30px;
+  }
+  @media(min-width:1200px){
+    width: 1200px;
+    padding-left: 200px;
+    padding-right: 60px;
+  }
+  @media(min-width:1440px){
+    width: 1440px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  @media(min-width:2000px){
+    width: 65vw;
+    padding: 0;
+  }
+}
+
+.layout{
+  @media(max-width:767px){
+    padding-top: 60px;
+  }
+  &-default{
+    .container {
+      @media(min-width:1440px){
+        padding-left: 260px;
+      }
+      @media(min-width:2000px){
+        padding: 0;
+      }
+    }
+  }
+  &-blog{
+    .container {
+      @media(min-width:992px){
+        padding-left: 30px;
+      }
+      @media(min-width:1200px){
+        padding-left: 60px;
+      }
+    }
+  }
+  &-article{
+    .container {
+      @media(min-width:992px){
+        padding-left: 30px;
+      }
+      @media(min-width:1200px){
+        padding-left: 60px;
+      }
+    }
+  }
+  &-full{
+    .container{
+      display: flex;
+      justify-content: center;
+      padding: 100px 0;
+      align-items: center;
+    }
+  }
+}
+body{
+  &.hidden{
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 100vh;
+    height: 100vh;
+  }
+}
+
+.animate{
+  opacity: 0;
+}
